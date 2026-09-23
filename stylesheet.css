@@ -119,6 +119,14 @@ nav.links li a:active{
     flex-direction: column;
     width: fit-content;
   }
+
+  footer nav{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px;  
+    width: 100%;
+  }
 }
 
 .nav-links li a{
@@ -218,9 +226,6 @@ footer nav a{
   color: black;
   margin-inline: 5%;
   background-color: wheat;
-}
-footer nav:hover{
-  background-color: antiquewhite;
 }
 footer nav a:hover{
   background-color: aliceblue;
