@@ -190,10 +190,16 @@ footer nav a:hover{
 }
 
 .dark-mode{
-
+   background-color: purple;
+   
 }
 .dark-mode-toggle-btn{
-
+   display: block;
+   background-color: black;
+   color: whitesmoke;
+   padding: 5px;
+   margin-block: 5px;
+   
 }
 
 /*
