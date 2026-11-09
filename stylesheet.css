@@ -1,5 +1,10 @@
-*{
+*, *::before, *::after {
    box-sizing: border-box;
+}
+
+header, main, footer{
+  max-width: 1030px;
+  margin-inline: auto;
 }
 body{
     padding:0;
@@ -98,12 +103,19 @@ nav.links li a:active{
   
     
 }
+header{
+  anchor-name: --header;
+}
 
 main, footer{
   margin-top: 5%;
-  padding-inline: 5%;
+ }
+#darkMode{
+  position: absolute;
+  position-anchor: --header;
+  left: anchor(left);
+  top: anchor(bottom);
 }
-
 .hero, .mission-statement {
   display: block;
   background-color:beige;
@@ -127,7 +139,7 @@ margin-block: 0;
 footer{
   background-color: beige;
   padding-block: 2%;
-
+  padding-inline: 5%;
 }
 
 .contact-us{
@@ -202,7 +214,6 @@ footer nav a:hover{
    margin-block: 5px;
    border: 2px solid white;
    border-radius: 5px;
-   margin-left: 5%;
 }
 
 .dark-mode-toggle-btn:hover{
@@ -285,4 +296,18 @@ footer nav a:hover{
   }
 
   
+}
+
+.logo-container.dark {
+ background-color: antiquewhite;
+}
+.logo-container.dark .page-name {
+  background-color: darkslategray;
+  color: azure;
+}
+.contact-us.darker .contact-us-list li a{
+  color: rgb(139, 165, 165);
+}
+.contact-us.darker .contact-us-list li a:hover{
+  color: rgb(214, 227, 227);
 }

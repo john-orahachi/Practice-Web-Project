@@ -5,6 +5,7 @@ const footerElement = document.getElementById('footer-element');
 const section1 = document.getElementById('section1');
 const section2 = document.getElementById('section2');
 const contactUs = document.getElementById("contact-us");
+const logoContainer = document.getElementById("logoContainer");
 menuToggle.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
@@ -18,12 +19,15 @@ darkMode.addEventListener("click", () => {
    section1.classList.toggle("dark");
    section2.classList.toggle("dark");
    contactUs.classList.toggle("darker");
+   logoContainer.classList.toggle('dark')
 
   if(bodyElement.classList.contains("dark-mode")){
     darkMode.textContent = "Light Mode";
     darkMode.style.backgroundColor = "white";
     darkMode.style.color = "black";
     bodyElement.style.color = "black";
+    
+
   }
   else {
     darkMode.textContent = "Dark Mode";
