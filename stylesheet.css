@@ -104,7 +104,7 @@ main, footer{
   padding-inline: 5%;
 }
 
-.page-title-container, .mission-statement {
+.hero, .mission-statement {
   display: block;
   background-color:beige;
   border-radius: 5px;
@@ -112,6 +112,7 @@ main, footer{
   text-align: center;
   margin-block: 2%;
 }
+
 h1, h2, h3 {
 font-family: Roboto, 'Merriweather', serif;
 font-weight: 900;
@@ -190,9 +191,8 @@ footer nav a:hover{
 }
 
 .dark-mode{
-   background-color: purple;
-   color: whitesmoke;
-   
+   background-color: rgb(1, 48, 79);
+   color: whitesmoke; 
 }
 .dark-mode-toggle-btn{
    display: block;
@@ -204,6 +204,7 @@ footer nav a:hover{
    border-radius: 5px;
    margin-left: 5%;
 }
+
 .dark-mode-toggle-btn:hover{
   background-color: grey;
   cursor: pointer;
@@ -212,6 +213,13 @@ footer nav a:hover{
 .dark-mode-toggle-btn:focus{
   outline: 1px solid blue;
   outline-offset: 1px;
+}
+.dark, .hero.dark, .mission-statement.dark{
+  color:azure;
+  background-color:darkslategray;
+}
+.contact-us.darker{
+  background-color: rgb(1, 48, 79);
 }
 
 /*

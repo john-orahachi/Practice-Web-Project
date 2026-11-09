@@ -1,6 +1,10 @@
 const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.getElementById('navLinks');
-
+const headerElement = document.getElementById('header-element');
+const footerElement = document.getElementById('footer-element');
+const section1 = document.getElementById('section1');
+const section2 = document.getElementById('section2');
+const contactUs = document.getElementById("contact-us");
 menuToggle.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
@@ -9,12 +13,17 @@ const darkMode = document.getElementById("darkMode");
 
 darkMode.addEventListener("click", () => {
   bodyElement.classList.toggle("dark-mode");
+   headerElement.classList.toggle("dark");
+   footerElement.classList.toggle("dark");
+   section1.classList.toggle("dark");
+   section2.classList.toggle("dark");
+   contactUs.classList.toggle("darker");
+
   if(bodyElement.classList.contains("dark-mode")){
     darkMode.textContent = "Light Mode";
     darkMode.style.backgroundColor = "white";
     darkMode.style.color = "black";
     bodyElement.style.color = "black";
-    document.div.style.backgroundColor = "black";
   }
   else {
     darkMode.textContent = "Dark Mode";
